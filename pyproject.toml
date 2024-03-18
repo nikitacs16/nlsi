@@ -1,0 +1,59 @@
+[tool.black]
+skip-magic-trailing-comma = true
+
+[tool.poetry]
+name = "nl_standing_instructions"
+version = "0.1.0"
+description = ""
+authors = ["Nikita Moghe"]
+packages = [
+  { include = "llm", from = "nlsi" },
+  { include = "data", from = "nlsi" },
+  { include = "interpret", from = "nlsi" },
+  { include = "evaluation", from = "nlsi" },
+]
+
+
+[tool.poetry.dependencies]
+python = "3.10.*"
+matplotlib = "^3.1.0"
+streamlit = "^1.15.2"
+st-annotated-text = "^3.0.0"
+scikit-learn = "^1.2.2"
+scipy = "^1.10.1"
+numpy = "^1.24.3"
+openai = "^1.13.0"
+pandas = "^2.0.2"
+transformers = "^4.29.2"
+datasets = "^2.12.0"
+evaluate = "^0.4.0"
+jupyter = "^1.0.0"
+stanza = "^1.5.0"
+httpx = "^0.24.1"
+watchdog = "^3.0.0"
+plotly = "^5.15.0"
+torch = "^2.1.0, !=2.1.0"
+msal = "^1.24.1"
+sentence-transformers = "^2.2.2"
+sacrebleu = "^2.4.0"
+accelerate = "^0.28.0"
+whoosh = "^2.7.4"
+tiktoken = "^0.6.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+isort = "^5.10.1"
+pylint = "^2.7.0"
+pyright = "1.1.245"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+pytest-xdist = "^2.5.0"
+pyinstaller = "^5.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[virtualenvs]
+create = true
+in-project = true

@@ -1,0 +1,1 @@
+```generic_model.py``` is the main file. every other file is self explanatory

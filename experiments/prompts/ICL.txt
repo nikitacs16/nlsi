@@ -1,0 +1,165 @@
+Standing instructions allow a user to add preferences or requirements that an agent would like to consider when generating its responses. The user's current utterance in the dialogue has priority over standing instructions. For the given dialogue, which of the following standing instructions are applicable? If no standing instructions are applicable, then generate "None". 
+
+Standing Instructions:
+If you're looking for Filipino cuisine, the price range will be moderate.
+If I'm looking for a salon, I'd prefer it to be for both men and women.
+Search for show time for Musical Movies at 1:30 pm.
+I prefer to fly American Airlines when I book flights.
+When I request Media, my favorite type is Funny.
+When it comes to looking for a hotel, I always go for the Novotel London Paddington.
+Look into both Travel and Hotels.
+When searching for a pop artist, consider Sabrina Carpenter.
+If I'm asking for some tunes, I'd like to hear some pop.
+If you're looking for a funny movie, then try to find one directed by Peter Farrelly.
+When I look for Restaurants, I prefer those that serve Filipino cuisine.
+Request Santa Clara as the city for your Salon appointment.
+I prefer a checking account when I ask for Banks.
+Request the event titled Timbers Vs Rsl.
+
+
+Dialogue:
+User: I'm searching for a salon.
+
+
+Applicable Standing Instructions:
+Request Santa Clara as the city for your Salon appointment.
+If I'm looking for a salon, I'd prefer it to be for both men and women.
+<EOS>
+
+
+
+Standing Instructions:
+If you're looking for a place to go and you've narrowed it down to a museum, it's probably a good choice for kids.
+When it comes to Media, I like to watch dramas.
+If I'm looking for a place to eat, my go-to is Korean food.
+If I'm looking for Events, what I really want is Music.
+Look for event name Billy Currington if the event type is Music.
+I'm looking for a moderate-priced Korean restaurant called Ancient Szechuan.
+If I'm looking for a Travel activity, I'd like to go to a Museum.
+Request Flights from American Airlines.
+Request Events for Rohnert Park.
+Request Dr. Christopher J. Bennett when seeking a dentist.
+
+
+Dialogue:
+User: Lets search some events together shall we?
+
+
+Applicable Standing Instructions:
+Request Events for Rohnert Park.
+If I'm looking for Events, what I really want is Music.
+Look for event name Billy Currington if the event type is Music.
+<EOS>
+
+
+
+Standing Instructions:
+Search for Aftershock Festival as the event name if the event type is Music.
+Request Albert Lee when seeking a dentist.
+My go-to theater for Movies is AMC Deer Valley.
+Request Music Events
+I prefer to travel to historical landmarks when I am given the opportunity.
+If I'm looking for a flight, I usually go with Delta Airlines.
+Request adventure Media.
+If I'm looking for movies, I like fantasy the best.
+Request Elmira Rosticceria when seeking restaurants.
+
+
+Dialogue:
+User: I'd like check the weather for March 3rd.
+Agent: In what city?
+User: Portland, make it for the March 3rd.
+
+
+
+Applicable Standing Instructions:
+None
+<EOS>
+
+
+
+Standing Instructions:
+If you're looking for French cuisine, you should expect to pay a moderate amount.
+I prefer to ask for Atelier Salon Willow Glen when I get my hair done.
+When I request Flights, I usually choose Economy seating class.
+State that Airport Stadium Cinemas is your preferred theater when requesting Movies.
+If the movie is a Drama, check to see if Nia DaCosta directed it.
+I prefer to fly American Airlines when I book flights.
+Search for the event name Ben Harper if the category is Blues.
+If I'm looking for a movie, I'm into dramas.
+At Airport Stadium Cinemas, search for the regular show type.
+My preferred category when I ask for Events is Blues.
+I'd like to get Travel for free if I'm asking for it.
+Look at both Hotels and Flights when searching.
+When I request Restaurants, my go-to cuisine is French.
+If I'm looking for flights, I want Premium Economy seats.
+
+
+Dialogue:
+User: I will be traveling soon, I need to find a hotel.
+Agent: Where and when do you want to look it for? Do you have a hotel in mind?
+User: I want a room at Point A Hotel Shoreditch in London, England on March 13th.
+
+
+
+Applicable Standing Instructions:
+Look at both Hotels and Flights when searching.
+I prefer to fly American Airlines when I book flights.
+When I request Flights, I usually choose Economy seating class.
+If I'm looking for flights, I want Premium Economy seats.
+<EOS>
+
+
+
+Standing Instructions:
+Look into both Travel and Hotels.
+Search for soccer if the event type is Sports.
+Search for Nia DaCosta as the director if the genre is identified as Drama.
+When I request a rental car, my desired choice is a Standard.
+Search for the restaurant Baan Thai House & Wine Bar when you're looking for Thai cuisine.
+I'd like my travel to be kid-friendly.
+When requesting Media, my preferred genre is Drama.
+I prefer to go to 1512 Barber Shop when I get a salon treatment.
+Request Events, specifically Sports events.
+Request Movies from United Artists Stonestown Twin theater.
+If I ask for Flights and airlines is Alaska Airlines then look for seating class as Economy, refundable
+When I'm looking for Restaurants, my top choice is Thai cuisine.
+When I'm looking for a movie, I usually go for something funny.
+If you're looking for a soccer event, the event name you should look for is United Vs Red Bulls.
+Request the Best Western Mission Bay when booking a hotel.
+If I'm looking for a flight, my go-to airline is Alaska Airlines.
+If I'm asking for music, my go-to genre is pop.
+
+
+Dialogue:
+User: Get me something fun in LA please.
+Agent: OK, there are 10 likley suspects. How about going to the Angels Flight Railway? It's a historical Landmark.
+User: Wow, super cool. How about a hotel nearby there?
+
+
+
+Applicable Standing Instructions:
+Look into both Travel and Hotels.
+Request the Best Western Mission Bay when booking a hotel.
+<EOS>
+
+
+
+Standing Instructions:
+If I'm looking for a flight, I usually go with Southwest Airlines.
+I prefer to open a savings account when I request one from Banks.
+I would like Sports to be my chosen event type if I am inquiring about Events.
+I prefer Benicia when I'm asking for Restaurants.
+If I'm getting my hair done, I want Atelier Salon Willow Glen to do it.
+Request Restaurants that serve light meal cuisine.
+If the event type is Sports, search for the event name, such as Cubs Vs Brewers.
+
+
+Dialogue:
+User: Go get me a restaurant that's really great, and make sure it serves sushi.
+
+
+Applicable Standing Instructions:
+I prefer Benicia when I'm asking for Restaurants.
+<EOS>
+

@@ -1,0 +1,49 @@
+You are designing a parser that takes in a user utterance and some standing instructions and outputs a set of API calls. 
+Every API call consist of "GetX" where X is domain name and uses slot names listed below as arguments.  We list the domain name followed by the list of possible slot names. Some slot names can be categorical or boolean
+The values for the arguments can come from the user's dialogue or standing instructions. If the user requests a slot name and no value is found, use "?". If the user requests dontcare, use value as "any".
+Standing instructions allow you to add preferences or requirements that you’d like to consider when generating the parser. 
+If standing instructions are applicable across multiple domains, place an API call per situation per domain. 
+If some of the applicable standing instructions have instructions of similar type, place multiple API calls respecting the standing instructions.
+If some slots are applicable across several domains, generate the respective slot names for the respective domains.
+
+Schema:
+Banks: recipient_account_name, amount, recipient_account_type
+Buses: origin, departure_date, fare_type, transfers, price, group_size, destination, destination_station_name, origin_station_name, departure_time
+Events: event_name, city, category, event_location, number_of_tickets, time, address_of_location, date, venue_address, event_type
+Flights: origin, inbound_arrival_time, is_redeye, outbound_departure_time, outbound_arrival_time, inbound_departure_time, return_date, airlines, seating_class, refundable, number_stops, destination_airport, departure_date, fare, destination, passengers, origin_airport
+Homes: pets_allowed, visit_date, address, property_name, rent, number_of_baths, area, number_of_beds, furnished, phone_number
+Hotels: has_wifi, average_rating, check_out_date, price, pets_welcome, number_of_days, location, check_in_date, phone_number, number_of_rooms, street_address, hotel_name
+HouseStays: rating, phone_number, has_laundry_service, check_out_date, total_price, check_in_date, address, number_of_adults, where_to
+Media: title, directed_by, subtitles, genre
+Movies: theater_name, movie_name, price, show_date, location, show_time, number_of_tickets, genre, show_type, street_address
+Music: song_name, year, album, artist, genre, playback_device
+RentalCars: dropoff_date, pickup_time, pickup_city, pickup_date, total_price, car_type, car_name, pickup_location
+Restaurants: price_range, restaurant_name, city, has_live_music, serves_alcohol, time, date, phone_number, cuisine, street_address, party_size
+Salons: is_unisex, average_rating, city, appointment_date, appointment_time, stylist_name, phone_number, street_address
+Dentists: dentist_name, phone_number, offers_cosmetic_services, city, appointment_date, appointment_time, address
+Doctors: doctor_name, city, average_rating, appointment_date, appointment_time, type, phone_number, street_address
+Travel: good_for_kids, category, attraction_name, location, phone_number, free_entry
+Weather: city, temperature, date, precipitation, humidity, wind
+
+
+Further, following slots have categorical values:
+recipient_account_type: checking, savings
+fare_type: Economy, Economy extra, Flexible
+(Events) category: Place of Worship, Theme Park, Museum, Historical Landmark, Park, Tourist Attraction, Sports Venue, Shopping Area, Performing Arts Venue, Nature Preserve
+event_type: Music, Sports
+seating_class: Economy, Premium Economy, Business, First Class
+refundable: True, False
+airlines: United Airlines, American Airlines, Delta Airlines, Southwest Airlines, Alaska Airlines, British Airways, Air Canada, Air France
+show_type: regular, 3d, imax
+playback_device: TV, kitchen speaker, bedroom speaker
+(Doctors) type: Gynecologist, ENT Specialist, Ophthalmologist, General Practitioner, Dermatologist
+car_type: Compact, Standard, Full-size
+price_range: inexpensive, moderate, expensive, very expensive
+
+
+Further, following slots are boolean:
+has_wifi, pets_allowed, subtitles, offers_cosmetic_services, has_laundry_service, is_unisex, good_for_kids, has_live_music, pets_welcome, serves_alcohol, is_redeye, furnished, free_entry
+
+
+
+
